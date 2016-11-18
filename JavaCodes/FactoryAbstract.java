@@ -1,6 +1,6 @@
 package JavaSE_Senior.DesignPattern.JavaCodes;
 
-public class AbstractFactory {
+public class FactoryAbstract {
 	public static void main(String[] args) {
 		AbsFactory factory = new NikeFactory();
 		factory.makeBalls();
