@@ -50,6 +50,7 @@ class AliBaBaServer implements AliBaBaDate{
 /**
  * 途虎使用了适配器，不改变原有业务逻辑的基础上，使用阿里的天气数据
  */
+//类的适配器模式
 class TuHuWeatherAdapter extends AliBaBaServer implements TuHuData{
 
 	@Override
@@ -58,3 +59,17 @@ class TuHuWeatherAdapter extends AliBaBaServer implements TuHuData{
 	}
 
 }
+
+//对象的适配器模式
+class TuHuWeatherAdapter2 extends AliBaBaServer implements TuHuData{
+	AliBaBaServer aliBaBaServer;
+	public TuHuWeatherAdapter2(AliBaBaServer aliBaBaServe) {
+		this.aliBaBaServer = aliBaBaServe;
+	}
+	@Override
+	public String getWeatherFromChina() {
+		return aliBaBaServer.getWeatherFromAliBaBa();
+	}
+
+}
+
