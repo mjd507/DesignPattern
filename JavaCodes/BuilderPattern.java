@@ -1,4 +1,4 @@
-package JavaSE_Senior.designPattern;
+package JavaSE_Senior.DesignPattern.JavaCodes;
 
 public class BuilderPattern {
 
