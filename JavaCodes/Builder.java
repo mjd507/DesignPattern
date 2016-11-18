@@ -1,6 +1,6 @@
 package JavaSE_Senior.DesignPattern.JavaCodes;
 
-public class BuilderPattern {
+public class Builder {
 
 	public static void main(String[] args) {
 		CarBuilder builder = new TuHuCarBuilder();
