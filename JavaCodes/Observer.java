@@ -8,7 +8,8 @@ public class Observer {
 		WeChatSubjectPublisher publisher = new NBAPublisher();
 		publisher.addUser(personA);
 		publisher.operation();
-		publisher.notifyUser();
+		String content = personA.getContent();
+		System.out.println(content);
 	}
 }
 
@@ -16,14 +17,23 @@ public class Observer {
  * 微信公众号订阅者
  */
 interface  WeChatSubscriber{
-	String update();
+	String update(String content);
+	String getContent();
 }
 
 class PersonA implements WeChatSubscriber{
 
+	private String content;
+	
 	@Override
-	public String update() {
-		return null;
+	public String update(String content) {
+		this.content = content;
+		return content;
+	}
+	
+	@Override
+	public String getContent(){
+		return content;
 	}
 }
 
@@ -34,7 +44,7 @@ class PersonA implements WeChatSubscriber{
 interface WeChatSubjectPublisher{
 	void addUser(WeChatSubscriber subscriber);
 	void delUser(WeChatSubscriber subscriber);
-	void notifyUser();
+	void notifyUser(String content);
 	void operation();
 }
 
@@ -55,9 +65,9 @@ abstract class Subject implements WeChatSubjectPublisher{
 	}
 
 	@Override
-	public void notifyUser(){
+	public void notifyUser(String content){
 		for (WeChatSubscriber weChatSubscriber : subscribersList) {
-			weChatSubscriber.update();
+			weChatSubscriber.update(content);
 		}
 	}
 }
@@ -66,8 +76,8 @@ class NBAPublisher extends Subject{
 
 	@Override
 	public void operation() {
-		System.out.println("勇士 VS 骑士，猛戳直播地址");
-		notifyUser();
+		String content = "勇士 VS 骑士，猛戳直播地址";
+		notifyUser(content);
 	}
 
 
