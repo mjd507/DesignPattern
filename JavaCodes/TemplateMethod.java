@@ -4,8 +4,6 @@ public class TemplateMethod {
 	public static void main(String[] args) {
 		BaseActivity activity = new Activity1();
 		activity.onCreate();
-		activity.onStart();
-		activity.onResume();
 	}
 }
 
@@ -13,16 +11,10 @@ abstract class BaseActivity{
 	
 	public void onCreate(){
 		initView();
-	}
-
-	public void onStart(){
 		initData();
-	}
-	
-	public void onResume(){
 		initListener();
 	}
-	
+
 	abstract void initView();
 	abstract void initData();
 	abstract void initListener();
