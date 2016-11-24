@@ -7,12 +7,12 @@ public class Facade {
 		CarMaintenanceCard.refreshLingQuan();
 		
 		//设配阿里
-		CarMaintenaceCardProxy.isUseAliStyle =true;
-		CarMaintenaceCardProxy.refreshLingQuan();
+		CarMaintenaceCardRefresher.isUseAliStyle =true;
+		CarMaintenaceCardRefresher.refreshLingQuan();
 		
 		//自如切换到途虎
-		CarMaintenaceCardProxy.isUseAliStyle =false;
-		CarMaintenaceCardProxy.refreshLingQuan();
+		CarMaintenaceCardRefresher.isUseAliStyle =false;
+		CarMaintenaceCardRefresher.refreshLingQuan();
 	}
 
 }
@@ -60,9 +60,9 @@ class CarMaintenanceCardForAli{
 //途虎应用在需要刷新卡片的点，采用门面模式，调用为阿里适配的保养卡片类, 这样原来的系统也不受到影响
 
 /**
- * 汽车保养卡片的门面，说白了也像一个代理
+ * 汽车保养卡片的门面
  */
-class CarMaintenaceCardProxy{
+class CarMaintenaceCardRefresher{
 	public static boolean isUseAliStyle = true;
 
 	public static void refreshLingQuan(){
