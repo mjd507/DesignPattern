@@ -1,4 +1,4 @@
-package JavaSE_Senior.DesignPattern.JavaCodes;
+package JavaSE_Senior.DesignPattern.JavaCodes.structural;
 
 public class Decorator {
 	public static void main(String[] args) {

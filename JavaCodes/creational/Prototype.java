@@ -1,4 +1,4 @@
-package JavaSE_Senior.DesignPattern.JavaCodes;
+package JavaSE_Senior.DesignPattern.JavaCodes.creational;
 
 public class Prototype {
 	public static void main(String[] args) throws CloneNotSupportedException {

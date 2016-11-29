@@ -1,4 +1,4 @@
-package JavaSE_Senior.DesignPattern.JavaCodes;
+package JavaSE_Senior.DesignPattern.JavaCodes.behavioral;
 
 public class Strategy {
 	public static void main(String[] args) {
