@@ -3,10 +3,9 @@ package JavaSE_Senior.DesignPattern.JavaCodes.structural;
 public class Bridge {
 	public static void main(String[] args) {
 		Video avi = new AVIVideo();
-		OperationSystem mac = new Mac(avi);
-		mac.playVideo();
+		VideoPlayer macplayer = new MacVideoPlayer(avi);
+		macplayer.playVideo();
 	}
-
 }
 
 
@@ -34,9 +33,10 @@ class WMVVideo extends Video{
 
 
 //--------------- 业务抽象角色 ----------------
-abstract class OperationSystem{
+
+abstract class VideoPlayer{
 	protected Video video;
-	public OperationSystem(Video video) {
+	public VideoPlayer(Video video) {
 		this.video = video;
 	}
 	protected void playVideo(){
@@ -44,10 +44,9 @@ abstract class OperationSystem{
 	}
 }
 
+class MacVideoPlayer extends VideoPlayer{
 
-class Mac extends OperationSystem{
-
-	public Mac(Video video) {
+	public MacVideoPlayer(Video video) {
 		super(video);
 	}
 
@@ -56,17 +55,16 @@ class Mac extends OperationSystem{
 		super.playVideo();
 		System.out.println("mac os 播放了"+ video.getClass().getSimpleName().substring(0,3) +" 格式的视频");
 	}
-
 }
 
-class Windows extends OperationSystem{
-	public Windows(Video video) {
+class WindowsVideoPlayer extends VideoPlayer{
+	public WindowsVideoPlayer(Video video) {
 		super(video);
 	}
 
 	@Override
 	protected void playVideo() {
 		super.playVideo();
-		System.out.println("mac os 播放了"+ video.getClass().getSimpleName().substring(0,3) +" 格式的视频");
+		System.out.println("windows os 播放了"+ video.getClass().getSimpleName().substring(0,3) +" 格式的视频");
 	}
 }
