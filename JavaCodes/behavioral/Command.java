@@ -9,14 +9,14 @@ public class Command {
 		//命令发布者
 		Teacher teacher = new Teacher();
 		//发布命令
-		teacher.setCommandTask(command);
+		teacher.setTaskCommand(command);
 		//给我去做
 		teacher.doHomeWork();
 	}
 }
 
 class Student{
-	void writeHomeWork(){
+	void doHomeWork(){
 		System.out.println("I'm writing.... what the fucking homework!");
 	}
 }
@@ -26,11 +26,11 @@ class Student{
  */
 class Teacher {
 	private TaskCommand command;
-	public void setCommandTask(TaskCommand command){
+	public void setTaskCommand(TaskCommand command){
 		this.command = command;
 	}
 	public void doHomeWork(){
-		command.writeHomeWork();
+		command.doHomeWork();
 	}
 }
 
@@ -39,7 +39,7 @@ class Teacher {
  */
 interface TaskCommand{
 	//做作业去
-	void writeHomeWork();
+	void doHomeWork();
 }
 
 /**
@@ -53,8 +53,8 @@ class ConcreteTask implements TaskCommand{
 	}
 
 	@Override
-	public void writeHomeWork() {
-		this.student.writeHomeWork();
+	public void doHomeWork() {
+		this.student.doHomeWork();
 	}
 
 }
