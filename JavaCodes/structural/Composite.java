@@ -6,7 +6,7 @@ import java.util.List;
 public class Composite {
 
 	public static void main(String[] args) {
-		//准备几个超市
+		//准备几个大润发超市
 		Market lhMarket = new RTMarket("上海-莲花国际大润发购物中心");
 		Market mlMarket = new RTMarket("上海-梅陇大润发购物中心");
 		//准备一个管理超市的
