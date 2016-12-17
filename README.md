@@ -1,2 +1,5 @@
 # DesignPattern
-use Java code，uml diagram，in order to understand design pattern easier
+- Use Java code, UML diagram, to express design patterns.
+- One design pattern corresponding to only one class file and one diagram.
+- 23 design patterns are divided into three folders : behavioral, creational, structural. and their UML diagrams also do this.
+- Each design pattern samples are try to be simplified, in order to make it easier for you to understand.
