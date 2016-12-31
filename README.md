@@ -8,8 +8,8 @@
 
 ## Creational:
 
-- [Singleton](../JavaCodes/creational/Singleton)
-- [Builder](../JavaCodes/creational/Builder)
+- [Singleton](../master/JavaCodes/creational/Singleton)
+- [Builder](../master/JavaCodes/creational/Builder)
 
 # Reference
 
