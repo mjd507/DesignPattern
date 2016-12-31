@@ -10,13 +10,13 @@
 
 - [Singleton](../master/JavaCodes/creational/Singleton.java)
 - [Builder](../master/JavaCodes/creational/Builder.java)
-	![Builder](../master/UmlDiagram/behavioral/Builder.png)
+	![Builder](../master/UmlDiagram/creational/Builder.png)
 - [Prototype](../master/JavaCodes/creational/Prototype.java)
-	![Prototype](../master/UmlDiagram/behavioral/Prototype.png)
+	![Prototype](../master/UmlDiagram/creational/Prototype.png)
 - [FactoryMethod](../master/JavaCodes/creational/FactoryMethod.java)
-	![FactoryMethod](../master/UmlDiagram/behavioral/FactoryMethod.png)
+	![FactoryMethod](../master/UmlDiagram/creational/FactoryMethod.png)
 - [FactoryAbstract](../master/JavaCodes/creational/FactoryAbstract.java)
-	![FactoryAbstract](../master/UmlDiagram/behavioral/FactoryAbstract.png)
+	![FactoryAbstract](../master/UmlDiagram/creational/FactoryAbstract.png)
 
 **Structural**
 
