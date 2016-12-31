@@ -9,6 +9,7 @@
 **Creational**
 
 - [Singleton](../master/JavaCodes/creational/Singleton.java)
+	![Singleton](../master/UmlDiagram/creational/Singleton.png)
 - [Builder](../master/JavaCodes/creational/Builder.java)
 	![Builder](../master/UmlDiagram/creational/Builder.png)
 - [Prototype](../master/JavaCodes/creational/Prototype.java)
