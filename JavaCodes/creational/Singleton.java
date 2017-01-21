@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.creational;
-
 public class Singleton {
 	private static Singleton instance = null;
 

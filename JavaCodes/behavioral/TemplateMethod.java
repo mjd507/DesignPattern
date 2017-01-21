@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.behavioral;
-
 public class TemplateMethod {
 	public static void main(String[] args) {
 		BaseActivity activity = new Activity1();

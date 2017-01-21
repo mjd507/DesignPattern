@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.creational;
-
 public class Builder {
 
 	public static void main(String[] args) {

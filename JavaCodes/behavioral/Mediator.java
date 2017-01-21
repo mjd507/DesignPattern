@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.behavioral;
-
 public class Mediator {
 
 	public static void main(String[] args) {

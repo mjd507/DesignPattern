@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.behavioral;
-
 public class Command {
 	public static void main(String[] args) {
 		//具体的命令执行者

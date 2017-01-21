@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.structural;
-
 import java.util.HashMap;
 import java.util.Map;
 

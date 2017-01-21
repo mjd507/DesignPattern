@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.structural;
-
 public class Bridge {
 	public static void main(String[] args) {
 		Video avi = new AVIVideo();

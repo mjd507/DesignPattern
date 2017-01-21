@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.behavioral;
-
 public class State {
 	public static void main(String[] args) {
 		//创建一个状态控制环境

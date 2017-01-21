@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.structural;
-
 import java.util.ArrayList;
 import java.util.List;
 

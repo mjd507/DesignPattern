@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.structural;
-
 public class Adapter {
 	public static void main(String[] args) {
 		TuHuWeatherAdapter adapter = new TuHuWeatherAdapter();

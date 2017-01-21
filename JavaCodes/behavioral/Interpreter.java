@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.behavioral;
-
 public class Interpreter {
 
 	public static void main(String[] args) {  

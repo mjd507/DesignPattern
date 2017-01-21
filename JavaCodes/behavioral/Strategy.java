@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.behavioral;
-
 public class Strategy {
 	public static void main(String[] args) {
 		PicDisplay picShow = new NormalPicDisplay();

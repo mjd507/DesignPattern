@@ -1,5 +1,3 @@
-package JavaSE_Senior.DesignPattern.JavaCodes.creational;
-
 /**
  * 产品接口
  */

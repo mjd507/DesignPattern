@@ -1,0 +1,5 @@
+*.class
+/JavaCodes/*.class
+/JavaCodes/behavioral/*.class
+/JavaCodes/creational/*.class
+/JavaCodes/structural/*.class
